@@ -25,7 +25,7 @@ const AboutUs = () => {
 
     return (
         <>
-        <h1>About Us</h1>
+        <h1 style={style}>About Us</h1>
         <div className="accordion" id="accordion">
             <div className="accordion-item" style={style}>
                 <h2 className="accordion-header" id="headingOne">
