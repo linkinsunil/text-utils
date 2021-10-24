@@ -7,8 +7,7 @@ import React, { useState } from 'react';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 
 
@@ -49,7 +48,7 @@ function App() {
               <TextForm formName="Enter text below to analyze" mode={mode} showAlert={showAlert} />
             </Route>
             <Route exact path="/about">
-              <AboutUs />
+              <AboutUs mode={mode} />
             </Route>
           </Switch>
         </div>
