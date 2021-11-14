@@ -44,7 +44,7 @@ function App() {
         <Alert alert={alert} />
         <div className="container">
           <Switch>
-            <Route exact path="/">
+            <Route exact path="/text-utils">
               <TextForm formName="Enter text below to analyze" mode={mode} showAlert={showAlert} />
             </Route>
             <Route exact path="/about">

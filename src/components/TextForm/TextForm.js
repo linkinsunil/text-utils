@@ -37,7 +37,7 @@ const TextForm = (props) => {
         <div style={{color:props.mode==='dark'?'white':'black'}}>
             <h2 className="mb-3 mt-3">{props.formName}</h2>
             <div className="mb-3">
-                <textarea className="form-control" style={{backgroundColor:props.mode==='dark'?'#495057':'white', color:props.mode==='light'?'black':'white', border:props.mode==='light'?'1px solid #ced4da':'1px solid #495057' }} id="myBox" placeholder="Enter text here..." value={text} onChange={handleUpChange} rows="6"></textarea>
+                <textarea className="form-control" style={{backgroundColor:props.mode==='dark'?'#495057':'white', color:props.mode==='light'?'black':'white', border:props.mode==='light'?'1px solid #ced4da':'1px solid #495057' }} id="myBox" placeholder="Enter text here..." value={text} onChange={handleUpChange} rows="10"></textarea>
             </div>
             <button disabled={text.length===0} className="btn btn-primary mx-2 my-2" onClick={handleUpClick}>Convert to UpperCase</button>
             <button disabled={text.length===0} className="btn btn-primary mx-2 my-2" onClick={handleLwClick}>Convert to LowerCase</button>
